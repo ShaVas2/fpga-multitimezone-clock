@@ -4,16 +4,7 @@ A digital clock that shows multiple timezomes, date, days of the week. Has the a
 
 ## Features
 
-- **Six cities** from one clock. Pick one with the switches:
-
-  | SW2 SW1 SW0 | City | Offset from UTC |
-  | 000 | India (H) | +5:30 |
-  | 001 | Tokyo (t) | +9 |
-  | 010 | Paris (P) | +2 |
-  | 011 | London (L) | +1 |
-  | 100 | Beijing (b) | +8 |
-  | 101 | New York (n) | −4 |
-
+- **Six cities** from one clock. Pick one with the switches.
 - **Date and weekday** that stay correct across midnight, month ends and leap years
 - **Stopwatch** with 0.01 s resolution
 - **Countdown timer** that beeps at zero
@@ -24,6 +15,20 @@ A digital clock that shows multiple timezomes, date, days of the week. Has the a
 - City based colour codes, LD17 shows colour for the selected city- India Orange, Tokyo white, Paris blue, London purple, Beijing  Red, New York green.  
 - Stopwatch, timer and alarm keep running when you switch screens
 - ***DOES NOT INCLUDE DAY LIGHT SAVINGS TIME FOR NYC, PARIS AND LONDON.***
+
+### City selection
+
+| SW2 SW1 SW0 | City (letter on display) | Offset from UTC |
+|---|---|---|
+| 000 | India (H) | +5:30 |
+| 001 | Tokyo (t) | +9 |
+| 010 | Paris (P) | +2 |
+| 011 | London (L) | +1 |
+| 100 | Beijing (b) | +8 |
+| 101 | New York (n) | −4 |
+
+- ***DOES NOT INCLUDE DAY LIGHT SAVINGS TIME FOR NYC, PARIS AND LONDON.***
+
 ## Hardware and tools
 
 - Board: Digilent Nexys 4 DDR (100 MHz clock)
