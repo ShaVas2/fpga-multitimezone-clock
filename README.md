@@ -49,11 +49,12 @@ Any button press or shake silences a ringing timer or alarm.
 
 ### Shake and tilt
 
-Action => Result
+| Action | Result |
+|---|---|
+| **Shake** the board (always on) | Silences a ringing timer or alarm |
+| **Tilt right** (SW14 up) | Next screen |
+| **Tilt left** (SW14 up) | Previous screen |
 
-- **Shake** the board (always on) => Silences a ringing timer or alarm 
-- **Tilt right** (SW14 up) => Next screen
-- **Tilt left** (SW14 up) => Previous Screen
 
 - A shake is 4 quick jerks within about half a second, so a single knock on the table is ignored.
 - A tilt must be held for a short moment, which stops accidental screen changes.
@@ -77,7 +78,7 @@ Action => Result
 | `bin2bcd.v` | Binary to BCD conversion |
 | `display_mux.v`, `seg7_driver.v` | Seven-segment display |
 | `seconds_bar.v`, `rgb_mood.v` | LED effects |
-| `nexys4ddr.xdc` | Pin constraints |
+| `constraints/nexys4ddr.xdc` | Pin constraints |
 | `sim/tb_clock_top.v` | Simulation testbench |
 
 ## How to build
