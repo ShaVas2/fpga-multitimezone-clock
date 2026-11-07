@@ -59,24 +59,26 @@ Action => Result
 - A tilt must be held for a short moment, which stops accidental screen changes.
 - Flip **SW14 down** to turn tilt control off.
 
-## Files
-
-1) `clock_top.v` | Top level, connects everything |
-2) `clk_divider.v` | Makes the 1 kHz, 100 Hz and 1 Hz enable ticks from 100 MHz |
-3) `reset_sync.v` | Reset synchroniser |
-4) `debounce.v` | Button and switch debouncing |
-5) `mode_fsm.v` | Screen-selection state machine |
-6) `time_counter.v` | Hours, minutes, seconds |
-7) `timezone_offset.v` | City offsets |
-8) `date_counter.v`, `weekday.v` | Date, leap year and day of the week |
-9) `stopwatch.v`, `countdown_timer.v`, `alarm_clock.v` | Stopwatch, timer, alarm |
-10) `beeper.v` | 2 kHz tone for the audio jack |
-11) `temp_sensor_adt7420.v`, `i2c_master.v`, `temp_to_bcd.v` | Temperature reading |
-12) `bin2bcd.v` | Binary to BCD conversion |
-13) `display_mux.v`, `seg7_driver.v` | Seven-segment display |
-14) `seconds_bar.v`, `rgb_mood.v` | LED effects |
-15) `nexys4ddr.xdc` | Pin constraints |
-16) `sim/tb_clock_top.v` | Simulation testbench |
+| File | Purpose |
+|---|---|
+| `clock_top.v` | Top level, connects everything |
+| `clk_divider.v` | Makes the 1 kHz, 100 Hz and 1 Hz enable ticks from 100 MHz |
+| `reset_sync.v` | Reset synchroniser |
+| `debounce.v` | Button and switch debouncing |
+| `mode_fsm.v` | Screen-selection state machine |
+| `time_counter.v` | Hours, minutes, seconds |
+| `timezone_offset.v` | City offsets |
+| `date_counter.v`, `weekday.v` | Date, leap year and day of the week |
+| `stopwatch.v`, `countdown_timer.v`, `alarm_clock.v` | Stopwatch, timer, alarm |
+| `beeper.v` | 2 kHz tone for the audio jack |
+| `temp_sensor_adt7420.v`, `i2c_master.v`, `temp_to_bcd.v` | Temperature reading |
+| `adxl362_spi.v` | SPI driver that reads the accelerometer |
+| `motion_detect.v` | Detects shake and tilt from the accelerometer readings |
+| `bin2bcd.v` | Binary to BCD conversion |
+| `display_mux.v`, `seg7_driver.v` | Seven-segment display |
+| `seconds_bar.v`, `rgb_mood.v` | LED effects |
+| `nexys4ddr.xdc` | Pin constraints |
+| `sim/tb_clock_top.v` | Simulation testbench |
 
 ## How to build
 
